@@ -1,0 +1,27 @@
+import { IsNumber, IsString } from "class-validator";
+
+
+export class ListProductsDto {
+
+    @IsString()
+    id: string;
+
+    @IsNumber()
+    userId: number;
+
+    @IsString()
+    name: string
+
+    @IsNumber()
+    value: number;
+
+    @IsNumber()
+    quantity: number;
+    
+    @IsString()
+    description: string;
+
+    @IsString()
+    category: string;
+
+}
